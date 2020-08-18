@@ -1,0 +1,92 @@
+body {
+  background-color: #6bbcbe;
+  width: 600px;
+  height: 500px;
+}
+/* dot */
+
+.dots {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 180px;
+  left: 320px;
+
+  animation: spin 1s infinite ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: none;
+  }
+
+  30% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+/* stick */
+
+.sticks {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 250px;
+  left: 318px;
+}
+
+.stick {
+  width: 15px;
+  height: 60px;
+  margin: 5px;
+  margin-top: 20px; /* 20px empty, limit*/
+  background-color: white;
+}
+
+#stick1 {
+  animation: wave 1s infinite ease-in-out;
+}
+
+#stick2 {
+  animation: wave 1s infinite ease-in-out;
+  animation-delay: 0.2s;
+}
+
+#stick3 {
+  animation: wave 1s infinite ease-in-out;
+  animation-delay: 0.4s;
+}
+
+#stick4 {
+  animation: wave 1s infinite ease-in-out;
+  animation-delay: 0.6s;
+}
+
+#stick5 {
+  animation: wave 1s infinite ease-in-out;
+  animation-delay: 0.8s;
+}
+
+@keyframes wave {
+  0% {
+    transform: none;
+  }
+  50% {
+    margin-top: 0px; /* up 20px empty, no limit */
+    height: 100px; /*up 20px down 20px */
+  }
+  100% {
+    transform: none;
+  }
+}
